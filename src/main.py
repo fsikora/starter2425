@@ -22,11 +22,12 @@ for line in sys.stdin:
 #to see how it works, run:
 #timeout 1 python3 main.py < instance.gr
 #exit_now is True after 1 second (in the benchmark, it will be after 5 minutes)
-while True:
+
+#while True:
     #infinite loop unless the boolean is set to true (for demonstration purpose)
     #the boolean will be set to true upon capturing SIGTERM
     #note : timeout sends SIGTERM
-    if killer.exit_now:
-        break
+    #if killer.exit_now:
+    #    break
 
 print("fin", file=sys.stderr)
